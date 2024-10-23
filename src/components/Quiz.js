@@ -61,13 +61,16 @@ const Quiz = () => {
               totalQuestions={questions.length}
             />
           </div>
+          
+            
+
           <div style={styles.buttonContainer}>
             <button style={styles.button} onClick={handleBack} disabled={currentQuestion === 0}>
               Back
             </button>
-            <button style={styles.button} onClick={handleNext}>
+            {/* <button style={styles.button} onClick={handleNext}>
               Next
-            </button>
+            </button> */}
             <button style={styles.button} onClick={handleQuizCompletion}>
               Submit
             </button>
