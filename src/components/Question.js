@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Question = ({ question }) => {
+const Question = ({ question, currentQuestion, setCurrentQuestion, score, setScore, totalQuestions }) => {
   const [selectedOption, setSelectedOption] = useState('');
 
   const handleOptionChange = (event) => {
@@ -8,8 +8,8 @@ const Question = ({ question }) => {
   };
 
   return (
-    <div style={styles.questionWrapper}>
-      <h2 style={styles.questionText}>{question.questionText}</h2>
+    <div>
+      <h2>{question.questionText}</h2>
       <form style={styles.form}>
         {question.answerOptions.map((option, index) => (
           <div key={index} style={styles.option}>
@@ -31,20 +31,11 @@ const Question = ({ question }) => {
 };
 
 const styles = {
-  questionWrapper: {
-    marginLeft: '20px', // Consistent left margin
-    marginBottom: '20px', // Space between questions
-  },
-  questionText: {
-    margin: 0, // Remove default margin for consistent alignment
-  },
   form: {
     marginTop: '10px',
   },
   option: {
-    marginBottom: '10px', // Space between options
-    display: 'flex',
-    alignItems: 'center', // Align radio and label
+    marginBottom: '10px',
   },
   radio: {
     marginRight: '10px',
