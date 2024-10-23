@@ -62,9 +62,9 @@ const Quiz = () => {
             />
           </div>
           <div style={styles.buttonContainer}>
-            {/* <button style={styles.button} onClick={handleBack} disabled={currentQuestion === 0}>
+            <button style={styles.button} onClick={handleBack} disabled={currentQuestion === 0}>
               Back
-            </button> */}
+            </button>
             <button style={styles.button} onClick={handleNext}>
               Next
             </button>
