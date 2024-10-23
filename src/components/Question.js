@@ -8,7 +8,7 @@ const Question = ({ question, currentQuestion, setCurrentQuestion, score, setSco
   };
 
   return (
-    <div>
+    <div style={styles.questionWrapper}>
       <h2>{question.questionText}</h2>
       <form style={styles.form}>
         {question.answerOptions.map((option, index) => (
@@ -31,11 +31,15 @@ const Question = ({ question, currentQuestion, setCurrentQuestion, score, setSco
 };
 
 const styles = {
+  questionWrapper: {
+    marginLeft: '20px', // Set a fixed left margin for alignment
+    marginBottom: '20px', // Space between questions
+  },
   form: {
     marginTop: '10px',
   },
   option: {
-    marginBottom: '10px',
+    marginBottom: '10px', // Space between options
   },
   radio: {
     marginRight: '10px',

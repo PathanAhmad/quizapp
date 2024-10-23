@@ -79,66 +79,57 @@ const Quiz = () => {
 };
 
 const styles = {
-    pageContainer: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      minHeight: '100vh',
-      backgroundColor: '#FFFFFF',
-      padding: '20px',
-    },
-    questionContainer: {
-      textAlign: 'left', // Align text to the left
-      padding: '20px',
-      backgroundColor: '#FFFFFF',
-      borderRadius: '10px',
-      width: '100%',
-      maxWidth: '600px',
-      marginBottom: '100px',
-      marginLeft: '20px', // Fixed left margin for consistency
-    },
-    optionContainer: {
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '10px', // Space between options
-      marginLeft: '0', // Remove margin to align with question text
-    },
-    buttonContainer: {
-      position: 'fixed',
-      bottom: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      width: '200px', // Set a fixed width for consistency
-    },
-    button: {
-      flex: 1, // Allow buttons to take equal space
-      padding: '10px 0',
-      fontSize: '16px',
-      borderRadius: '5px',
-      border: 'none',
-      backgroundColor: '#007BFF',
-      color: 'white',
-      cursor: 'pointer',
-      margin: '0 5px',
-    },
-    result: {
-      textAlign: 'center',
-      padding: '20px',
-    },
-    tryAgainButton: {
-      padding: '10px 20px',
-      fontSize: '16px',
-      borderRadius: '5px',
-      border: 'none',
-      backgroundColor: '#28a745',
-      color: 'white',
-      cursor: 'pointer',
-      marginTop: '10px',
-    },
-  };
-  
-  
+  pageContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100vh',
+    backgroundColor: '#FFFFFF',
+    padding: '20px',
+  },
+  questionContainer: {
+    textAlign: 'center',
+    padding: '20px',
+    backgroundColor: '#FFFFFF',
+    borderRadius: '10px',
+    width: '100%',
+    maxWidth: '600px',
+    marginBottom: '100px',
+  },
+  buttonContainer: {
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    display: 'flex',
+    justifyContent: 'space-between', // Adjusted for better alignment
+    width: '200px', // Set a fixed width for consistency
+  },
+  button: {
+    flex: 1, // Allow buttons to take equal space
+    padding: '10px 0', // Adjust padding for better height
+    fontSize: '16px',
+    borderRadius: '5px',
+    border: 'none',
+    backgroundColor: '#007BFF',
+    color: 'white',
+    cursor: 'pointer',
+    margin: '0 5px', // Add margin to separate buttons slightly
+  },
+  result: {
+    textAlign: 'center',
+    padding: '20px',
+  },
+  tryAgainButton: {
+    padding: '10px 20px',
+    fontSize: '16px',
+    borderRadius: '5px',
+    border: 'none',
+    backgroundColor: '#28a745',
+    color: 'white',
+    cursor: 'pointer',
+    marginTop: '10px',
+  },
+};
 
 export default Quiz;
