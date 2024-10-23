@@ -96,12 +96,13 @@ const styles = {
       width: '100%',
       maxWidth: '600px',
       marginBottom: '100px',
+      marginLeft: '20px', // Fixed left margin for consistency
     },
     optionContainer: {
       display: 'flex',
       flexDirection: 'column',
-      marginLeft: '20px', // Indent options for consistency
       gap: '10px', // Space between options
+      marginLeft: '0', // Remove margin to align with question text
     },
     buttonContainer: {
       position: 'fixed',
@@ -137,6 +138,7 @@ const styles = {
       marginTop: '10px',
     },
   };
+  
   
 
 export default Quiz;
